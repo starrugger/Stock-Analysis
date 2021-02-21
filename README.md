@@ -3,6 +3,7 @@ A orchestrator who takes an input of a Stock Ticker (TSLA, AAPL, BA etc) and ret
 
 I used the yFnance api, provided by https://github.com/ranaroussi/yfinance, to provide technical analyis:
 
+***So make sure you "pip install yfinance"
 
 (TECHNICAL ANALYSIS categories as of 02/21/2021
 Current Price 
@@ -22,8 +23,8 @@ One you run "python orchestrator.py", you will be asked to "enter a stock ticker
 
 The orchastrator will keep going till, you enter "quit" or untill you keyboard interrupt with "Ctrl+C"
 
-### still need to add and adopt the StockScrape to factor in miscellaneous inputs such as #'s or not stock Ticker's
 
+## STILL NEED TO ADD AND ADOPT THE StockScrape TO SCENARIOS WHERE WRONG INPUTS SUCH AS #'S OR STOCK TICKER'S ARE NOT ENTERED ##
 SOOO PLEASE DON'T ENTER INPUTS THAT ARE NOT STOCK TICKERS:
 if you do, just re-run program
 
