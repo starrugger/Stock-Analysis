@@ -1,10 +1,17 @@
 import yfinance as yf
 
-try:
-    def analysis(ticker):
-
+def analysis(ticker):
+    
+    try:
         stock=ticker
-        bucket=yf.Ticker(stock)
+    except:
+
+        try:
+            bucket=yf.Ticker(stock)
+        
+        except:
+            print("This is not a TOKEN")
+
         print(bucket.info['shortName'])
         periods=['5d','1mo','3mo','6mo','1y','2y','5y','10y','ytd','max']
 
@@ -43,5 +50,3 @@ try:
         for key in technicalAnalysis:
             print(key[0], key[1])
 
-except:
-    print("No Stock entered, or not run properly")
